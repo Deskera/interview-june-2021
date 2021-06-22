@@ -3,7 +3,15 @@ package exam;
 public class ConvertToBinary {
 
   public String toBinary(final int n) {
-    //TODO write your code here to achieve the desired result as explained in Readme file for this problem.
-    return "";
+    int d=n;
+    string str="";
+    for(int i=0;i++){
+      str +=d%2;
+      d=d/2;
+    }
+    string b="";
+    for(int i=str.lenght()-1;i>=0;i--)
+      b+=str.charAt(i);
+    return b;
   }
 }
