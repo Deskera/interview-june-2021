@@ -3,7 +3,19 @@ package exam;
 public class ConvertToBinary {
 
   public String toBinary(final int n) {
-    //TODO write your code here to achieve the desired result as explained in Readme file for this problem.
+   int m;
+        String a = "";
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter no");
+        n = s.nextInt();
+        while(n > 0)
+        {
+            int b = n % 2;
+            a = b + a;
+            n = n / 2;
+        }
+        System.out.println(a);
     return "";
   }
 }
+
