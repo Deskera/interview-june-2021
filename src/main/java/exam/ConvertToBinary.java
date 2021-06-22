@@ -1,9 +1,22 @@
 package exam;
 
-public class ConvertToBinary {
+  public class ConvertToBinary {
+    static void toBinary(int num)
+    {
+        int[] binaryNum = new int[67];
+        int i = 0;
+        while (num > 0) {
+            binaryNum[i] = num % 2;
+            num = num / 2;
+            i++;
+        }
 
-  public String toBinary(final int n) {
-    //TODO write your code here to achieve the desired result as explained in Readme file for this problem.
-    return "";
-  }
+        for (int j = i - 1; j >= 0; j--)
+            System.out.print(binaryNum[j]);
+    }
+        public static void main(String[] args)
+        {
+          int num = 67;
+          toBinary(num);
+        }
 }
