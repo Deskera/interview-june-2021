@@ -1,9 +1,26 @@
 package exam;
 
-public class ConvertToBinary {
-
-  public String toBinary(final int n) {
-    //TODO write your code here to achieve the desired result as explained in Readme file for this problem.
-    return "";
-  }
+import java.util.Scanner;
+public class Convert
+{
+    public static void main(String[] args) 
+    {
+        int n, count = 0, a;
+        String x = "";
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter any decimal number:");
+        n = s.nextInt();
+        while(n > 0)
+        {
+            a = n % 2;
+            if(a == 1)
+            {
+                count++;
+            }
+            x = a + "" + x;
+            n = n / 2;
+        }
+        System.out.println("Binary number:"+x);
+       
+    }
 }
