@@ -1,9 +1,10 @@
 package exam;
 
 public class ShiftElementsInArray {
-
-  
-     int last = arr[arr.length - 1];
+     
+ public void shift(int[] arr)
+           {
+           int last = arr[arr.length - 1];
         for (int i = arr.length - 2; i >= 0; i--) 
         {
             arr[i + 1] = arr[i];
