@@ -10,19 +10,21 @@ public class ConvertToBinary {
             return; 
         }
 
-        remainder = n % 2;
-        System.out.print(remainder);
-
-        if (n < 0) {
+      else if(n < 0) {
             System.out.println("Error: Not a positive integer");
         } 
     else {
 
-            System.out.print("Convert to binary is:");
-            toBinary(n);
+           
+            remainder = n % 2;
+             
+             ConvertTOBinary(n >> 1);
+            
+
         }
     }
-
+System.out.print("Convert to binary is:");
+System.out.print(remainder);
     return "";
   }
 }
